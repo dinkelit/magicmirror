@@ -1,8 +1,8 @@
 var Mirror = {
     data    :[
-		weatherDataTimeStamp = "";
+		weatherDataTimeStamp = "",
 		weatherData	= "",
-		transportDataTimeStamp = "";
+		transportDataTimeStamp = "",
 		transportData = ""
 	],
 	initialize: function() {
