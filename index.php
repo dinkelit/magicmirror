@@ -18,10 +18,10 @@
 			</div>
 		</div>
 		<div id="mid_left" onclick="console.log('LEFT');">
-			
+
 		</div>
 		<div id="mid_mid">
-		
+
 		</div>
 		<div id="mid_right" onclick="console.log('RIGHT');">
 			<div id="transport_list"></div>
@@ -29,6 +29,7 @@
 		<div class="clear"></div>
 		<div id="bot" onclick="console.log('DOWN');">
 			<div id="weather_wrapper">
+        <div id="weather_timestamp" style="visibility:hidden;height:0px;">empty</div>
 				<div id="weather_today">
 					<div id="weather_today_symbol"><p id="celsius"></div>
 					<div id="weather_today_location"></div>
