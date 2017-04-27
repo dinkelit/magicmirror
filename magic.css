@@ -18,8 +18,8 @@ body{
 
 	float:left;
 	width:20%;
-	height:70vh;
-	
+	height:65vh;
+
 }
 
 #mid_mid{
@@ -27,7 +27,7 @@ body{
 
 	float:left;
 	width:60%;
-	height:70vh;
+	height:65vh;
 }
 
 #mid_right{
@@ -35,20 +35,20 @@ body{
 
 	float:left;
 	width:20%;
-	height:70vh;
+	height:65vh;
 }
 
 #bot{
 	background-color:#000000;
 
-	height:15vh;
+	height:20vh;
 	display:block;
 }
 
 #weather_wrapper{
 	width:100%;
 	float:left;
-	height:100%;
+	height:80%;
 	overflow:hidden;
 }
 
@@ -59,7 +59,7 @@ body{
 }
 
 #weather_today_location{
-	width:100%; 
+	width:100%;
 	padding-left:50px;
 }
 
@@ -82,7 +82,7 @@ body{
 	height:140px;
 	width:100%;
 	background-size: 150px 150px;
-	background-position: center; 
+	background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -125,4 +125,3 @@ body{
 .transport_dest{
 	float:right;
 }
-
