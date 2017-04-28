@@ -13,18 +13,19 @@
    <BODY>
 		<div id="top" onclick="console.log('UP');">
 			<div id="date_wrapper">
+        <div id="date"></div>
 				<div id="clock"></div>
-				<div id="date"></div>
+
 			</div>
 		</div>
 		<div id="mid_left" onclick="console.log('LEFT');">
-
+      <div id="transport_list"></div>
 		</div>
 		<div id="mid_mid">
 
 		</div>
 		<div id="mid_right" onclick="console.log('RIGHT');">
-			<div id="transport_list"></div>
+
 		</div>
 		<div class="clear"></div>
 		<div id="bot" onclick="console.log('DOWN');">
