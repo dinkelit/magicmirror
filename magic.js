@@ -201,7 +201,7 @@ var Mirror = {
 		console.log("updating transport");
 
 		$.ajax({
-			url: "/magicmirror/js/php/getbvg.php",
+			url: "/repo/magicmirror/php/getbvg.php",
 			success: function(result){
 				//console.log("result!"+result);
 				var res = result.split("~~~~~");//$('<div>'+result+'</div>');
