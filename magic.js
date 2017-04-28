@@ -211,7 +211,7 @@ var Mirror = {
 
         var i = 0
         var k = 0
-				while (k<8) {
+				while (k<10) {
           i = i+1
 					var jElem = $('<div>'+res[i]+'</div>');
 					list = (jElem.text()).split("\n");
@@ -231,7 +231,7 @@ var Mirror = {
               //debugger
 
 
-              $('#transport_list').append('<div class="transport_element"><div class="transport_id">'+replaceHelper(list[6], 'linie_main')+'</div><div class="transport_time">'+diff.split(":")[1]+' min</div><div class="transport_dest">'+replaceHelper(list[11],"linie_sub")+'</div></div><div class="clear"></div>');
+              $('#transport_list').append('<hr><div class="transport_element"><div class="transport_id">'+replaceHelper(list[6], 'linie_main')+'</div><div class="transport_time">'+diff.split(":")[1]+' min</div><div class="transport_dest">'+replaceHelper(list[11],"linie_sub")+'</div></div><div class="clear"></div>');
     					console.log(list[1]+" "+list[6].replace("Bus ","")+" "+list[11].replace(" (Berlin)",""));
               k = k+1
             }

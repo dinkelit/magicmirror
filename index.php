@@ -19,7 +19,7 @@
 			</div>
 		</div>
 		<div id="mid_left" onclick="console.log('LEFT');">
-      <div id="transport_list"></div>
+      <div id="transport_list">Abfahrtzeiten:</div>
 		</div>
 		<div id="mid_mid">
 
