@@ -113,7 +113,7 @@
         }
       }
 		}
-		else if (e.clientY >= def_y){
+		else if (e.clientY > def_y){
       console.log('UP');
 
       var effect = 'slide';
