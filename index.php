@@ -62,9 +62,7 @@
 
     // Gate so that event doesn't fire too often
     if ((Date.now() - localStorage.getItem("lastMove"))>1000 && !(e.clientX == localStorage.getItem("lastX") && e.clientY == localStorage.getItem("lastY"))){
-      localStorage.setItem("lastMove",Date.now());
-      localStorage.setItem("lastX",e.clientX);
-      localStorage.setItem("lastY",e.clientY);
+
 
 		$("#pos").html(e.clientX+" "+e.clientY);
 
@@ -113,7 +111,7 @@
         }
       }
 		}
-		else if (e.clientY > def_y){
+		else if (e.clientY >= localStorage.getItem("lastY")){
       console.log('UP');
 
       var effect = 'slide';
@@ -133,7 +131,7 @@
         }
       }
 		}
-		else if (e.clientY <= def_y){
+		else if (e.clientY <= localStorage.getItem("lastY")){
       console.log('DOWN');
 
       var effect = 'slide';
@@ -154,6 +152,11 @@
         }
       }
 		}
+
+    localStorage.setItem("lastMove",Date.now());
+    localStorage.setItem("lastX",e.clientX);
+    localStorage.setItem("lastY",e.clientY);
+
     }
 	})
 
