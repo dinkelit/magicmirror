@@ -4,6 +4,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 body{
 	font-family: "Roboto Condensed", sans-serif;
 	color:white;
+	overflow:hidden;
 }
 
 #top{
@@ -138,4 +139,52 @@ body{
 .linie_sub{
 	width:15px;
 	height:15px;
+}
+
+#leftSlide {
+	position:absolute;
+	top:15vh;
+	height:65vh;
+	width:1024px;
+    color:Green;
+    background-color:#eee;
+    border:2px solid #333;
+    display:none;
+    text-align:justify;
+}
+
+#rightSlide {
+	position:absolute;
+	top:15vh;
+	height:65vh;
+	width:1024px;
+    color:Green;
+    background-color:#eee;
+    border:2px solid #333;
+    display:none;
+    text-align:justify;
+}
+
+#upSlide {
+	position:absolute;
+	top:15vh;
+	height:65vh;
+	width:1024px;
+    color:Green;
+    background-color:#eee;
+    border:2px solid #333;
+    display:none;
+    text-align:justify;
+}
+
+#downSlide {
+	position:absolute;
+	width:1024px;
+	top:15vh;;
+	height:65vh;
+    color:Green;
+    background-color:#eee;
+    border:2px solid #333;
+    display:none;
+    text-align:justify;
 }
