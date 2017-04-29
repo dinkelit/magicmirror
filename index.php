@@ -61,7 +61,7 @@
     $("body").mousemove(function(e){
 
     // Gate so that event doesn't fire too often
-    if ((Date.now() - localStorage.getItem("lastMove"))>1000 && !(e.clientX == localStorage.getItem("lastX") && e.clientY == localStorage.getItem("lastY"))){
+    if ((Date.now() - localStorage.getItem("lastMove"))>2500 ){ // && !(e.clientX == localStorage.getItem("lastX") && e.clientY == localStorage.getItem("lastY"))
 
 
 		$("#pos").html(e.clientX+" "+e.clientY);
