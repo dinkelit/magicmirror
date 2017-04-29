@@ -59,7 +59,11 @@
 		Mirror.initialize();
 
     $("body").mousemove(function(e){
-		//console.log("loc: "+e.clientX, e.clientY);
+
+    // Gate so that event doesn't fire too often
+    if ((Date.now() - localStorage.getItem("lastMove"))>1000){
+      localStorage.setItem("lastMove",Date.now());
+
 		$("#pos").html(e.clientX+" "+e.clientY);
 
 		var def_x = 400;
@@ -148,6 +152,7 @@
         }
       }
 		}
+    }
 	})
 
 

@@ -9,6 +9,7 @@ var Mirror = {
 
 		//Clock timer every second
     localStorage.setItem("activeSlide","none")
+    localStorage.setItem("lastMove",Date.now())
 		setTimeout(function() { clock(); }, 100);
 		function clock() {
 			Mirror.updateClock();
