@@ -71,7 +71,7 @@
 		var def_x = 400;
 		var def_y = 274;
 
-		if (e.clientX < def_x){
+		if (e.clientX > def_x){
       console.log('LEFT');
 
       var effect = 'slide';
@@ -92,7 +92,7 @@
         }
       }
 		}
-		else if (e.clientX > def_x){
+		else if (e.clientX < def_x){
       console.log('RIGHT');
 
       var effect = 'slide';
@@ -113,7 +113,7 @@
         }
       }
 		}
-		else if (e.clientY < def_y){
+		else if (e.clientY >= def_y){
       console.log('UP');
 
       var effect = 'slide';
@@ -133,7 +133,7 @@
         }
       }
 		}
-		else if (e.clientY > def_y){
+		else if (e.clientY <= def_y){
       console.log('DOWN');
 
       var effect = 'slide';
