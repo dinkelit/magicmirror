@@ -8,48 +8,50 @@ body{
 }
 
 #top{
+	position:relative;
 	background-color:#000000;
-
 	height:15vh;
 	display:block;
 }
 
 #mid_left{
+	position:relative;
 	background-color:#0c0c0c;
-
 	float:left;
 	width:25%;
 	height:65vh;
 }
 
 #mid_mid{
+	position:relative;
 	background-color:#191919;
-
 	float:left;
 	width:55%;
 	height:65vh;
 }
 
 #mid_right{
+	position:relative;
 	background-color:#0c0c0c;
-
 	float:left;
 	width:20%;
 	height:65vh;
 }
 
 #transport_list{
+	position:relative;
 	padding-left:50px;
 }
 
 #bot{
+	position:relative;
 	background-color:#000000;
-
 	height:20vh;
 	display:block;
 }
 
 #weather_wrapper{
+	position:relative;
 	width:100%;
 	float:left;
 	height:80%;
@@ -57,17 +59,20 @@ body{
 }
 
 #weather_today{
+	position:relative;
 	float:left;
 	height:100%;
 	width:200px;
 }
 
 #weather_today_location{
+	position:relative;
 	width:100%;
 	padding-left:50px;
 }
 
 #celsius{
+	position:relative;
 	position:absolute;
 	font-size:30pt;
 	bottom:0;
@@ -75,6 +80,7 @@ body{
 }
 
 #weather_forecast{
+	position:relative;
 	float:left;
 	height:80%;
 	width:650px;
@@ -87,10 +93,11 @@ body{
 	width:100%;
 	background-size: 190px 190px;
 	background-position: center;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 
 #date_wrapper{
+	position:relative;
 	float:right;
 	width:400px;
 	padding-top:30px;
@@ -98,12 +105,14 @@ body{
 }
 
 #clock{
+	position:relative;
 	float:right;
 	font-size:50pt;
 	padding-top:20px;
 }
 
 #date{
+	position:relative;
 	float:right;
 	font-size:25pt;
 }
@@ -151,6 +160,7 @@ body{
     border:2px solid #333;
     display:none;
     text-align:justify;
+		z-index: 1000;
 }
 
 #rightSlide {
@@ -163,6 +173,7 @@ body{
     border:2px solid #333;
     display:none;
     text-align:justify;
+		z-index: 1000;
 }
 
 #upSlide {
@@ -175,6 +186,7 @@ body{
     border:2px solid #333;
     display:none;
     text-align:justify;
+		z-index: 1000;
 }
 
 #downSlide {
@@ -187,4 +199,5 @@ body{
     border:2px solid #333;
     display:none;
     text-align:justify;
+		z-index: 1000;
 }
