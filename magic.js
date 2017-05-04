@@ -258,6 +258,99 @@ var Mirror = {
       return origString
     }
 
-	}
+	},
+  slideLeft: function(){
+    console.log("Mirror sliding left")
+    var effect = 'slide';
+    var options = { direction: "left" };
+    var duration = 350;
+
+    $('#content_name').text("Kalender");
+    $('#content_name').show();
+
+    if (localStorage.getItem("activeSlide") == null || localStorage.getItem("activeSlide") == "none"){
+      localStorage.setItem("activeSlide","left")
+      $('#leftSlide').toggle(effect, options, duration);
+    }else{
+      if(localStorage.getItem("activeSlide") != "left"){
+        $('#'+localStorage.getItem("activeSlide")+'Slide').toggle(effect, { direction: "right" }, duration);
+        $('#leftSlide').toggle(effect, options, duration);
+        localStorage.setItem("activeSlide","left")
+      }else{
+        localStorage.setItem("activeSlide","none")
+        $('#leftSlide').toggle(effect, options, duration);
+        $('#content_name').fadeOut();
+      }
+    }
+  },
+  slideRight: function(){
+    console.log("Mirror sliding right")
+    $('#content_name').text("Wetter");
+    $('#content_name').show();
+
+    var effect = 'slide';
+    var options = { direction: "right" };
+    var duration = 350;
+
+    if (localStorage.getItem("activeSlide") == null || localStorage.getItem("activeSlide") == "none"){
+      localStorage.setItem("activeSlide","right")
+      $('#rightSlide').toggle(effect, options, duration);
+    }else{
+      if(localStorage.getItem("activeSlide") != "right"){
+        $('#'+localStorage.getItem("activeSlide")+'Slide').toggle(effect, { direction: "left" }, duration);
+        $('#rightSlide').toggle(effect, options, duration);
+        localStorage.setItem("activeSlide","right")
+      }else{
+        localStorage.setItem("activeSlide","none")
+        $('#rightSlide').toggle(effect, options, duration);
+        $('#content_name').fadeOut();
+      }
+    }
+  },
+  slideUp: function(){
+    console.log("Mirror sliding up")
+    var effect = 'slide';
+    var options = { direction: "up" };
+    var duration = 350;
+    if (localStorage.getItem("activeSlide") == null || localStorage.getItem("activeSlide") == "none"){
+      localStorage.setItem("activeSlide","up")
+      $('#upSlide').toggle(effect, options, duration);
+    }else{
+      if(localStorage.getItem("activeSlide") != "up"){
+        $('#'+localStorage.getItem("activeSlide")+'Slide').toggle(effect, { direction: "down" }, duration);
+        $('#upSlide').toggle(effect, options, duration);
+        localStorage.setItem("activeSlide","up")
+      }else{
+        localStorage.setItem("activeSlide","none")
+        $('#upSlide').toggle(effect, options, duration);
+      }
+    }
+  },
+  slideDown: function(){
+    console.log("Mirror sliding down")
+    var effect = 'slide';
+    var options = { direction: "down" };
+    var duration = 350;
+
+    if (localStorage.getItem("activeSlide") == null || localStorage.getItem("activeSlide") == "none"){
+      localStorage.setItem("activeSlide","down")
+      $('#downSlide').toggle(effect, options, duration);
+    }else{
+      if(localStorage.getItem("activeSlide") != "down"){
+        $('#'+localStorage.getItem("activeSlide")+'Slide').toggle(effect, { direction: "up" }, duration);
+        $('#downSlide').toggle(effect, options, duration);
+        localStorage.setItem("activeSlide","down")
+      }else{
+        localStorage.setItem("activeSlide","none")
+        $('#downSlide').toggle(effect, options, duration);
+      }
+    }
+  },
+  slideNear: function(){
+    console.log("Mirror sliding near")
+  },
+  slideFar: function(){
+    console.log("Mirror sliding far")
+  }
 
 }
