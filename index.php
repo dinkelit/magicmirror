@@ -13,7 +13,11 @@
    </HEAD>
    <BODY>
      <div id="leftSlide">
-         LeftSlide
+       <div id="calendar_bar"></div>
+       <div id="calendar_encl">
+         <iframe id = "calendar_frame" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=900&amp;wkst=1&amp;bgcolor=%23000000&amp;src=kontaktvdinkel%40gmail.com&amp;color=%23125A12&amp;src=de.german%23holiday%40group.v.calendar.google.com&amp;color=%230F4B38&amp;src=fglrvqbmlhp722l8u2gh25i2c4%40group.calendar.google.com&amp;color=%2323164E&amp;src=bb5jis13bcth9q49d8rmjun794%40group.calendar.google.com&amp;color=%235229A3&amp;src=1ofr5s22fspcg89bvthftfkrh0%40group.calendar.google.com&amp;color=%23875509&amp;ctz=Europe%2FBerlin" frameborder="0" scrolling="no"></iframe>
+       </div>
+
      </div>
      <div id="upSlide">
          UpSlide
@@ -22,9 +26,21 @@
          DownSlide
      </div>
      <div id="rightSlide">
-         RightSlide
+        <div id="weather_bar"></div>
+        <div id="weather_encl">
+          <iframe id = "weather_frame"
+          src="https://www.accuweather.com/de/de/berlin/10178/may-weather/178087?monyr=5/1/2017" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div id="film_encl">
+          <iframe id = "weather_frame_film"
+          src="http://www.wetteronline.de/wetterfilm" frameborder="0" scrolling="no"></iframe>
+      </div>
+
      </div>
 		<div id="top">
+      <div id="content_name">
+        Kalender
+      </div>
 			<div id="date_wrapper">
         <div id="date"></div>
 				<div id="clock"></div>
@@ -69,12 +85,16 @@
 		var def_x = 400;
 		var def_y = 274;
 
+
 		if (e.clientX > def_x){
       console.log('LEFT');
 
       var effect = 'slide';
       var options = { direction: "left" };
       var duration = 350;
+
+      $('#content_name').text("Kalender");
+      $('#content_name').fadeIn();
 
       if (localStorage.getItem("activeSlide") == null || localStorage.getItem("activeSlide") == "none"){
         localStorage.setItem("activeSlide","left")
@@ -87,11 +107,15 @@
         }else{
           localStorage.setItem("activeSlide","none")
           $('#leftSlide').toggle(effect, options, duration);
+          $('#content_name').fadeOut();
         }
       }
 		}
-		else if (e.clientX < def_x){
+		else if (e.clientX < def_x || true){
       console.log('RIGHT');
+
+      $('#content_name').text("Wetter");
+      $('#content_name').fadeIn();
 
       var effect = 'slide';
       var options = { direction: "right" };
@@ -108,6 +132,7 @@
         }else{
           localStorage.setItem("activeSlide","none")
           $('#rightSlide').toggle(effect, options, duration);
+          $('#content_name').fadeOut();
         }
       }
 		}

@@ -7,6 +7,8 @@ var Mirror = {
 	],
 	initialize: function() {
 
+    $('#content_name').hide()
+
 		//Clock timer every second
     localStorage.setItem("activeSlide","none")
     localStorage.setItem("lastMove",Date.now())

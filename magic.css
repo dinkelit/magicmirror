@@ -96,12 +96,83 @@ body{
   background-repeat: no-repeat;
 }
 
+#content_name{
+	position:relative;
+	float:left;
+	padding-top:83px;
+	padding-left:50px;
+	font-size: 50pt;
+}
+
 #date_wrapper{
 	position:relative;
 	float:right;
 	width:400px;
 	padding-top:30px;
 	padding-right:40px;
+}
+
+#calendar_bar{
+	position:relative;
+	height:15px;
+	background-color:#89cff0;
+	display:block;
+	z-index:2;
+}
+
+#calendar_encl{
+	overflow:hidden;
+	margin-top:10px;
+	padding-top:20px;
+	z-index:1;
+}
+
+#calendar_frame{
+	position:absolute;
+	border-width:0;
+	width:800px;
+	height:900px;
+	z-index:1;
+	top:-8px;
+}
+
+#weather_bar{
+	position:relative;
+	height:15px;
+	background-color:#FFA500;
+	display:block;
+	z-index:3;
+}
+
+#weather_encl{
+	overflow:hidden;
+	z-index:2;
+}
+
+#weather_frame{
+	position:absolute;
+	border-width:0;
+	width:787px;
+	height:840px;
+	z-index:2;
+	top:-257px;
+	left:100px;
+}
+
+#film_encl{
+	overflow:hidden;
+	z-index:1;
+}
+
+#weather_frame_film{
+	position:absolute;
+	border-width:0;
+	width:787px;
+	height:840px;
+	z-index:1;
+	left:100px;
+	top:400px;
+	margin-top:-200px;
 }
 
 #clock{
@@ -153,7 +224,7 @@ body{
 #leftSlide {
 	position:absolute;
 	top:15vh;
-	height:65vh;
+	height:85vh;
 	width:1024px;
     color:Green;
     background-color:#eee;
@@ -161,19 +232,19 @@ body{
     display:none;
     text-align:justify;
 		z-index: 1000;
+		overflow:hidden;
 }
 
 #rightSlide {
 	position:absolute;
 	top:15vh;
-	height:65vh;
+	height:85vh;
 	width:1024px;
-    color:Green;
-    background-color:#eee;
-    border:2px solid #333;
+    background-color:#000000;
     display:none;
     text-align:justify;
 		z-index: 1000;
+		overflow:hidden;
 }
 
 #upSlide {
