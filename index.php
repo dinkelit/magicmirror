@@ -32,8 +32,9 @@
           src="https://www.accuweather.com/de/de/berlin/10178/may-weather/178087?monyr=5/1/2017" frameborder="0" scrolling="no"></iframe>
         </div>
         <div id="film_encl">
-          <iframe id = "weather_frame_film"
+          <!--<iframe id = "weather_frame_film"
           src="http://www.wetteronline.de/wetterfilm" frameborder="0" scrolling="no"></iframe>
+          -->
       </div>
 
      </div>
