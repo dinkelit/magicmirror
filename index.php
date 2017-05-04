@@ -55,7 +55,7 @@
 		<div id="mid_left" onClick="Mirror.slideLeft();">
       <div id="transport_list">Abfahrtzeiten:</div>
 		</div>
-		<div id="mid_mid">
+		<div id="mid_mid" onClick="Mirror.slideNear();">
 
 		</div>
 		<div id="mid_right" onClick="Mirror.slideRight();">
@@ -87,19 +87,19 @@
         //debugger
     		if (e.clientX == 0 && e.clientY == 1){
           console.log('UP');
-          Mirror.slideUp();
+          Mirror.slideDown();
     		}
     		else if (e.clientX == 0 && e.clientY == 2){
           console.log('DOWN');
-          Mirror.slideDown();
+          Mirror.slideUp();
     		}
     		else if (e.clientX == 0 && e.clientY == 3){
           console.log('LEFT');
-          Mirror.slideLeft();
+          Mirror.slideRight();
     		}
     		else if (e.clientX == 0 && e.clientY == 4){
           console.log('RIGHT');
-          Mirror.slideRight();
+          Mirror.slideLeft();
     		}
         else if (e.clientX == 0 && e.clienty == 5){
           Mirror.slideNear();

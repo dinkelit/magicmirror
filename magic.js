@@ -348,6 +348,12 @@ var Mirror = {
   },
   slideNear: function(){
     console.log("Mirror sliding near")
+    var effect = 'slide';
+    var duration = 350;
+    if (!(localStorage.getItem("activeSlide") == null || localStorage.getItem("activeSlide") == "none")){
+        $('#'+localStorage.getItem("activeSlide")+'Slide').toggle(effect, { direction: "up" }, duration);
+        localStorage.setItem("activeSlide","none")
+    }
   },
   slideFar: function(){
     console.log("Mirror sliding far")
