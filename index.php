@@ -81,7 +81,7 @@
     if ((Date.now() - localStorage.getItem("lastMove"))>2500 ){ // && !(e.clientX == localStorage.getItem("lastX") && e.clientY == localStorage.getItem("lastY"))
 
 
-		$("#pos").html(e.clientX+" "+e.clientY);
+		alert(e.clientX+" "+e.clientY);
 
 		var def_x = 400;
 		var def_y = 274;
