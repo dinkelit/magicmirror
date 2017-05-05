@@ -19,7 +19,7 @@
        <div id="calendar_bar"></div>
        <div id="calendar_encl">
 
-         <iframe id = "calendar_frame" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=900&amp;wkst=1&amp;bgcolor=%23000000&amp;src=kontaktvdinkel%40gmail.com&amp;color=%23125A12&amp;src=de.german%23holiday%40group.v.calendar.google.com&amp;color=%230F4B38&amp;src=fglrvqbmlhp722l8u2gh25i2c4%40group.calendar.google.com&amp;color=%2323164E&amp;src=bb5jis13bcth9q49d8rmjun794%40group.calendar.google.com&amp;color=%235229A3&amp;src=1ofr5s22fspcg89bvthftfkrh0%40group.calendar.google.com&amp;color=%23875509&amp;ctz=Europe%2FBerlin" frameborder="0" scrolling="no"></iframe>
+         <iframe id = "calendar_frame" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=1370&amp;wkst=1&amp;bgcolor=%23000000&amp;src=kontaktvdinkel%40gmail.com&amp;color=%23125A12&amp;src=de.german%23holiday%40group.v.calendar.google.com&amp;color=%230F4B38&amp;src=fglrvqbmlhp722l8u2gh25i2c4%40group.calendar.google.com&amp;color=%2323164E&amp;src=bb5jis13bcth9q49d8rmjun794%40group.calendar.google.com&amp;color=%235229A3&amp;src=1ofr5s22fspcg89bvthftfkrh0%40group.calendar.google.com&amp;color=%23875509&amp;ctz=Europe%2FBerlin" frameborder="0" scrolling="no"></iframe>
 
        </div>
 

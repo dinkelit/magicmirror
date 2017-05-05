@@ -130,10 +130,11 @@ body{
 #calendar_frame{
 	position:absolute;
 	border-width:0;
-	width:800px;
-	height:900px;
+	width:1046px;
+	height:1370px;
 	z-index:1;
-	top:-8px;
+	top:-98px;
+	background-color:green;
 }
 
 #weather_bar{
@@ -225,21 +226,21 @@ body{
 	position:absolute;
 	top:15vh;
 	height:85vh;
-	width:1024px;
-    color:Green;
-    background-color:#eee;
-    border:2px solid #333;
-    display:none;
-    text-align:justify;
-		z-index: 1000;
-		overflow:hidden;
+	width:1046px;
+  color:Green;
+  background-color:#eee;
+  border:2px solid #333;
+  display:none;
+  text-align:justify;
+	z-index: 1000;
+	overflow:hidden;
 }
 
 #rightSlide {
 	position:absolute;
 	top:15vh;
 	height:85vh;
-	width:1024px;
+	width:1046px;
     background-color:#000000;
     display:none;
     text-align:justify;
@@ -250,25 +251,25 @@ body{
 #upSlide {
 	position:absolute;
 	top:15vh;
-	height:65vh;
-	width:1024px;
-    color:Green;
-    background-color:#eee;
-    border:2px solid #333;
-    display:none;
-    text-align:justify;
-		z-index: 1000;
+	height:85vh;
+	width:1046px;
+  color:Green;
+  background-color:#eee;
+  border:2px solid #333;
+  display:none;
+  text-align:justify;
+	z-index: 1000;
 }
 
 #downSlide {
 	position:absolute;
-	width:1024px;
-	top:15vh;;
-	height:65vh;
-    color:Green;
-    background-color:#eee;
-    border:2px solid #333;
-    display:none;
-    text-align:justify;
-		z-index: 1000;
+	top:15vh;
+	height:85vh;
+	width:1046px;
+  color:Green;
+  background-color:#eee;
+  border:2px solid #333;
+  display:none;
+  text-align:justify;
+	z-index: 1000;
 }
