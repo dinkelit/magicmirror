@@ -157,7 +157,7 @@ body{
 	height:1000px;
 	z-index:2;
 	top:-414px;
-	left:200px;
+	left:175px;
 }
 
 #film_encl{
@@ -171,8 +171,8 @@ body{
 	width:787px;
 	height:787px;
 	z-index:1;
-	left:200px;
-	top:640px;
+	left:175px;
+	top:600px;
 }
 
 #clock{
