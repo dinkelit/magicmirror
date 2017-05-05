@@ -157,7 +157,7 @@ body{
 	height:1000px;
 	z-index:2;
 	top:-414px;
-	left:175px;
+	left:150px;
 }
 
 #film_encl{
@@ -166,13 +166,13 @@ body{
 }
 
 #weather_frame_film{
-	margin-top:650px;
+	margin-top:580px;
+	margin-left:150px;
 	border-width:0;
 	width:787px;
 	height:787px;
 	z-index:1;
-	left:175px;
-	top:600px;
+
 }
 
 #clock{
