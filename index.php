@@ -13,7 +13,7 @@
    </HEAD>
    <BODY>
 
-      <div id="dxy" style="position:absolute;z-index:1500;width:100px; height:100px; background-color:red; top:50px;"></div>
+      <!--<div id="dxy" style="position:absolute;z-index:1500;width:100px; height:100px; background-color:red; top:50px;"></div>-->
 
      <div id="leftSlide" onClick="Mirror.slideLeft();">
        <div id="calendar_bar"></div>
@@ -51,8 +51,8 @@
       <div id="content_name">
         Kalender
       </div>
-      <input type=text id=myInput>
-      <input type=text id=myInput2>
+      <!--<input type=text id=myInput>
+      <input type=text id=myInput2>-->
 			<div id="date_wrapper">
         <div id="date"></div>
 				<div id="clock"></div>
