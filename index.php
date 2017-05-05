@@ -43,7 +43,7 @@
           <iframe id = "weather_frame_film"
           src="https://www.niederschlagsradar.de/image.ashx?type=regioloop&regio=bln&j=&m=&d=&mi=&uhr=&bliksem=0&voor=&srt=loop1stunde&tijdid=201755246" frameborder="0" scrolling="no"></iframe>
         -->
-        <img src="php/weather.gif" style="margin-top:600px;" />
+        <img src="php/weather.gif" id="weather_frame_film" />
       </div>
 
      </div>

@@ -154,10 +154,10 @@ body{
 	position:absolute;
 	border-width:0;
 	width:787px;
-	height:940px;
+	height:1000px;
 	z-index:2;
-	top:-360px;
-	left:100px;
+	top:-414px;
+	left:150px;
 }
 
 #film_encl{
@@ -166,14 +166,13 @@ body{
 }
 
 #weather_frame_film{
-	position:absolute;
+	margin-top:650px;
 	border-width:0;
 	width:787px;
-	height:840px;
+	height:787px;
 	z-index:1;
-	left:100px;
-	top:800px;
-	margin-top:-0px;
+	left:150px;
+	top:850px;
 }
 
 #clock{
