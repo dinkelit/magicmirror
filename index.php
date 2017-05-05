@@ -12,6 +12,9 @@
       <TITLE>Magic Mirror</TITLE>
    </HEAD>
    <BODY>
+
+      <div id="dxy" style="position:absolute;z-index:1500;width:100px; height:100px; background-color:red; top:50px;"></div>
+
      <div id="leftSlide" onClick="Mirror.slideLeft();">
        <div id="calendar_bar"></div>
        <div id="calendar_encl">
@@ -46,6 +49,8 @@
       <div id="content_name">
         Kalender
       </div>
+      <input type=text id=myInput>
+      <input type=text id=myInput2>
 			<div id="date_wrapper">
         <div id="date"></div>
 				<div id="clock"></div>
@@ -116,6 +121,55 @@
 
     }
 	})
+
+  window.onload = addListeners();
+
+  function addListeners(){
+      document.getElementById('dxy').addEventListener('mousedown', mouseDown, false);
+      window.addEventListener('mouseup', mouseUp, false);
+
+  }
+
+  function mouseUp()
+  {
+      window.removeEventListener('mousemove', divMove, true);
+  }
+
+  function mouseDown(e){
+    window.addEventListener('mousemove', divMove, true);
+  }
+
+  function divMove(e){
+      var div = document.getElementById('dxy');
+    div.style.position = 'absolute';
+    div.style.top = e.clientY + 'px';
+    div.style.left = e.clientX + 'px';
+  }
+
+  onload = function () {
+     var e = document.getElementById('myInput');
+     e.oninput = test;
+     e.onpropertychange = e.oninput; // for IE8
+     // e.onchange = e.oninput; // FF needs this in <select><option>...
+     // other things for onload()
+     var e = document.getElementById('myInput2');
+     e.oninput = test2;
+     e.onpropertychange = e.oninput;
+     function test(){
+       console.log("test")
+       var e = document.getElementById('myInput');
+       var i = document.getElementById('dxy');
+       $(i).css("height", e.value+"px")
+       //debugger
+     }
+     function test2(){
+       console.log("test2")
+       var e = document.getElementById('myInput2');
+       var i = document.getElementById('dxy');
+       $(i).css("width", e.value+"px")
+       //debugger
+     }
+    };
 
 
 	</script>
